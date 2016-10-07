@@ -237,7 +237,7 @@ public class TunnelMover : MonoBehaviour {
 	}
 
 	// FLEX THAT SHIT MON AMI ! ---------------------------------------------------------------------------------------------------
-	private bool flexion = false;
+	//private bool flexion = false; //never used
 	private bool[] flexionDone;
 	private bool[] firstFlexFrame;
 	private float[] ampFlexion;
@@ -286,7 +286,7 @@ public class TunnelMover : MonoBehaviour {
 	}
 	
 	private void startFlexion(){
-		flexion = true;
+		//flexion = true; //never used
 		for (int i = 0 ; i<tunnel.cubeCone1Array.GetLength(0); i++)
 		{
 			for (int j = 0 ; j<tunnel.cubeCone1Array.GetLength(1); j++)
@@ -304,7 +304,7 @@ public class TunnelMover : MonoBehaviour {
 	}
 	
 	private void endFlexion(){
-		flexion = false;
+		// flexion = false; //never used
 		for (int i = 0 ; i<tunnel.cubeCone1Array.GetLength(0); i++)
 		{
 			for (int j = 0 ; j<tunnel.cubeCone1Array.GetLength(1); j++)

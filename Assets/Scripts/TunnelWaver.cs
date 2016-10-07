@@ -183,8 +183,8 @@ public class TunnelWaver : MonoBehaviour {
 		int idxGraves = 3*largeur/4;
 		int idxMidLeft = largeur/2;
 		int idxAigues = largeur/4;	
-		float timeSin=Mathf.Sin(Time.time/7f);
-		float fastTime=Mathf.Sin(Time.time*2);
+		//float timeSin=Mathf.Sin(Time.time/7f);
+		//float fastTime=Mathf.Sin(Time.time*2);
 		
 		///Valeurs connues:
 		/// MidsR:

@@ -46,7 +46,6 @@ public class PlanetSystem : MonoBehaviour {
 		float theta;
 		float vx;
 		float vy;
-		float vz;
 		float Cnorm;
 
 		// APPARITION DES PLANETES --------------------------------------------------------------------

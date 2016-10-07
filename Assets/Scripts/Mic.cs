@@ -4,7 +4,7 @@ using System.Collections;
 public class Mic : MonoBehaviour {
 	
 	public string selectedDevice { get; private set; }	
-	private bool micSelected = false;
+	//private bool micSelected = false;
 	private int minFreq, maxFreq; 
 	public float loudness { get; private set; } //dont touch
 	public float sourceVolume = 100;//Between 0 and 100
@@ -17,7 +17,7 @@ public class Mic : MonoBehaviour {
 		GetComponent<AudioSource>().loop = true; // Set the AudioClip to loop
 		GetComponent<AudioSource>().mute = true; // Mute the sound, we don't want the player to hear it
 		selectedDevice = Microphone.devices[0].ToString();
-		micSelected = true;
+		//micSelected = true; //never used
 
 		GetMicCaps();
 	}

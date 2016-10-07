@@ -7,9 +7,9 @@ public class CameraForce : MonoBehaviour {
 	public Material black;
 	//public Material[] sky = new Material[song.skyboxTime.Length];
 	
-	private bool switchFirst;
-	private bool switchSecond;
-	private bool switchThird;
+	//private bool switchFirst;
+	//private bool switchSecond;
+	//private bool switchThird;
 
 	// Use this for initialization
 	void Start () {
@@ -22,9 +22,9 @@ public class CameraForce : MonoBehaviour {
 //		t2 = song.debutLastStretch + (song.finLastStretch - song.debutLastStretch)*0.5f;
 //		t3 = song.debutLastStretch + (song.finLastStretch - song.debutLastStretch)*0.75f;
 
-		switchFirst = false;
-		switchSecond = false;
-		switchThird = false;
+//		switchFirst = false;
+//		switchSecond = false;
+//		switchThird = false;
 
 	}
 	

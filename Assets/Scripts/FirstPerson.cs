@@ -8,7 +8,7 @@ public class FirstPerson : MonoBehaviour {
 
 	private float MouseSensitivity;
 	private float MouvSpeed;
-	private float PitchRange;
+	//private float PitchRange; //never used
 	private float rotPitch;
 
 	private float VertVelocity =0f;
@@ -22,7 +22,7 @@ public class FirstPerson : MonoBehaviour {
 
 		MouvSpeed = 4;
 		MouseSensitivity = 3;
-		PitchRange = 60f;
+		//PitchRange = 60f; // neverused
 
 		// Hides the mouse
 		//Screen.lockCursor = false;

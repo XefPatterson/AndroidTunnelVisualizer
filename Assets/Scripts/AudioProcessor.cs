@@ -9,7 +9,7 @@ public class AudioProcessor : MonoBehaviour
 
 	void Awake ()
 	{
-		GetComponent<AudioSource>().pitch = 1f;
+		//GetComponent<AudioSource>().pitch = 1f;
 		amplitudes = new float[1024];
 		Array.Clear (amplitudes, 0, amplitudes.Length);
 	}

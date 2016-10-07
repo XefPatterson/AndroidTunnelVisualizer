@@ -117,8 +117,9 @@ public class CubeTunnel : MonoBehaviour {
 				cubeCone2Array[(int)i,(int)j].lastScaleY = 0.1f;
 				cubeCone2Array[(int)i,(int)j].lastScaleZ = 1.0f;
 				cubeCone2Array[(int)i,(int)j].lastColor = cube.GetComponent<Renderer>().material.color;
-				
-			}
+                cubeCone2Array[(int)i, (int)j].GetComponent<Renderer>().material.SetColor("_Color", new Color(0.0f, 1.0f, 0.0f));
+
+            }
 		}
 
 		// CONTRUCTION CENTRE ----------------------------------------------------------------

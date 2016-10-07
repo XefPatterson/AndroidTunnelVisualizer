@@ -18,8 +18,8 @@ public class SongProcessor : AudioProcessor
 		mainSong.volume = 1f;
 		if (mainSong.clip != null)
 		{
-			Debug.Log("SHOULD PLAY!");
-			mainSong.Play();
+			//Debug.Log("SHOULD PLAY!");
+			//mainSong.Play();
 		}
 		else
 		{

@@ -105,6 +105,7 @@ public class Song : MonoBehaviour {
 		if (time () >= 0 && !songPlaying) {
 			songProcessor.startPlaying();
 			songPlaying = true;
+			Debug.Log("Start playing song!");
 		}
 
 		handleOutsideSong();

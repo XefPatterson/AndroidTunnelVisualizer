@@ -41,7 +41,6 @@ public class TunnelWaver : MonoBehaviour {
 			micProcessor.enabled = false;
 		}
 
-
 		// On applique les trucs a la premiere rangée
 		ApplyScaleFirstRow(tunnel.cubeCone1Array, hauteurBasses, hauteurMoyennes, hauteurAigues);
 		if (song.time () >= song.colorItUp)

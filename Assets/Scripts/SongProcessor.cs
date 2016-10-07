@@ -16,6 +16,16 @@ public class SongProcessor : AudioProcessor
 	void Start ()
 	{
 		mainSong.volume = 1f;
+		if (mainSong.clip != null)
+		{
+			Debug.Log("SHOULD PLAY!");
+			mainSong.Play();
+		}
+		else
+		{
+			Debug.Log("NO CLIP");
+		}
+
 		outsideSong.volume = 0.0f;
 	}
 	
@@ -60,6 +70,7 @@ public class SongProcessor : AudioProcessor
 		}
 	}
 	public void startPlaying (){
+		Debug.Log("Song procesor starting the song!");
 		mainSong.Play ();
 	}
 

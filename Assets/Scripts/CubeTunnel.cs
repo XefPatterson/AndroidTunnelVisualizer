@@ -9,13 +9,13 @@ public class CubeTunnel : MonoBehaviour {
 
 	// parametres globaux
 	private const float nCubes = 16f;  			 		// nb de cubes sur la circonference
-	private const float cRadius = 3.85f;   				// rayon du cylindre
+	private const float cRadius = 5.85f;   				// rayon du cylindre
 	private const float cHole = 0f;     		 		// fraction restante du rayon
 	private const float height = 0.5f; 			 		// hauteur des cubes par defaut
 	// note : les cubes sont de longueur 1
 
 	// structures de cubes
-	private const float nZCone = 16f;				    // nb de cubes de profondeur
+	private const float nZCone = 32f;				    // nb de cubes de profondeur
 	public CubeInfo[,] cubeCone1Array = new CubeInfo[(int)nCubes,(int)nZCone];
 	public CubeInfo[,] cubeCone2Array = new CubeInfo[(int)nCubes,(int)nZCone];
 	private const float nZCenter = 1f;

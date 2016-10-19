@@ -83,6 +83,8 @@ public class TunnelWaver : MonoBehaviour {
 		float b = 0f;	
 		float timeSin=Mathf.Sin(Time.time/7f);
 		float fastTime=Mathf.Sin(Time.time*2);
+        Renderer renderer;
+        //Color col;
 
 		///Valeurs connues:
 		/// MidsR:
@@ -90,8 +92,9 @@ public class TunnelWaver : MonoBehaviour {
 		ampli = cubes[idxMidRight,0].transform.localScale.y;
 		g =  ((timeSin*0.7f) * (ampli/6f))-0.4f;
 		r = (ampli/6f) - (g);
-		b = 0.8f - (ampli/3);	
-		cubes[idxMidRight,0].GetComponent<Renderer>().material.SetColor("_Color", new Color(r,g,b));
+		b = 0.8f - (ampli/3);
+        renderer = cubes[idxMidRight, 0].GetComponent<Renderer>();
+        renderer.material.color = new Color(r,g,b);
 
 		//MidsL
 		cubes[idxMidLeft,0].lastColor = cubes[idxMidLeft,0].GetComponent<Renderer>().material.GetColor("_Color");
